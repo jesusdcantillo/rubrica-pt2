@@ -25,6 +25,11 @@ const readDb = () => {
 app.get('/random/quotes', (req, res) => {
     const data = readDb();
     const quotes = JSON.parse(data).quotes;
+
+    if (quotes.length === 0) {
+        return res.status(404).json({ error: 'No hay frases disponibles' }); // Verifica que el array tenga elementos, si no, manda mensaje de error.
+    }
+
     res.json(quotes);
 });
 
@@ -32,6 +37,11 @@ app.get('/random/quotes', (req, res) => {
 app.get('/random/quotes/random', (req, res) => {
     const data = readDb();
     const quotes = JSON.parse(data).quotes;
+
+    if (quotes.length === 0) {
+        return res.status(404).json({ error: 'No hay frases disponibles' }); // Verifica que el array tenga elementos, si no, manda mensaje de error.
+    }
+
     const randomPos = Math.floor(Math.random() * quotes.length); // Número entre 0 y 1 multiplicado por la longitud del array y redondeado hacia abajo. 
     const randomQuote = quotes[randomPos];
     res.json(randomQuote);
@@ -48,7 +58,7 @@ app.post('/random/quotes', express.json(), (req, res) => {
     const quotes = JSON.parse(data).quotes;
 
     // Crear frase nueva
-    const newId = quotes.length > 0 ? quotes[quotes.length - 1].id + 1 : 1; // Si el array tiene elementos, el id será id + 1, si no, será 1.
+    const newId = quotes.length > 0 ? quotes[quotes.length - 1].id + 1 : 0; // Si el array tiene elementos, el id será id + 1, si no, será 0.
     const newQuote = { id: newId, text, author };
     quotes.push(newQuote); // Añadir la nueva frase al array ya existente.
 
