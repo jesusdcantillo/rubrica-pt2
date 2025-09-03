@@ -1,0 +1,34 @@
+{
+  "quotes": [
+    {
+      "id": 0,
+      "text": "Cuando innovas, te equivocas. Lo que marca la diferencia es darse cuenta, rectificar y seguir innovando.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 1,
+      "text": "El éxito es ir de fracaso en fracaso sin perder el entusiasmo.",
+      "author": "Winston Churchill"
+    },
+    {
+      "id": 2,
+      "text": "Cree que puedes y ya estarás a medio camino.",
+      "author": "Theodore Roosevelt"
+    },
+    {
+      "id": 3,
+      "text": "La vida es lo que ocurre mientras estás ocupado haciendo otros planes.",
+      "author": "John Lennon"
+    },
+    {
+      "id": 4,
+      "text": "No cuentes los días, haz que los días cuenten.",
+      "author": "Muhammad Ali"
+    },
+    {
+      "id": 5,
+      "text": "El futuro pertenece a quienes creen en la belleza de sus sueños.",
+      "author": "Eleanor Roosevelt"
+    }
+  ]
+}

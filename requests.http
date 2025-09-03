@@ -1,0 +1,15 @@
+GET http://localhost:3000/random/quotes
+
+###
+
+GET http://localhost:3000/random/quotes/random
+
+###
+
+POST http://localhost:3000/random/quotes
+Content-Type: application/json
+
+{
+  "text": "El futuro pertenece a quienes creen en la belleza de sus sueños.",
+  "author": "Eleanor Roosevelt"
+}

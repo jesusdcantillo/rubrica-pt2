@@ -1,0 +1,18 @@
+{
+  "name": "rubrica-pt2",
+  "version": "1.0.0",
+  "description": "Punto #2 de la rúbrica del corte 1 de Desarrollo Web.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "JesusDCR",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
